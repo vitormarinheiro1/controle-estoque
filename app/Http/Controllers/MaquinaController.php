@@ -34,6 +34,15 @@ class MaquinaController extends Controller
 
     public function edit(Maquina $maquina)
     {
-        return view('maquinas.index')->with('maquina', $maquina);
+        return view('maquinas.edit')->with('maquina', $maquina);
+    }
+    
+
+    public function update(Maquina $maquina, Request $request)
+    {
+        $maquina->fill($request->all());
+        $maquina->save();
+
+        return to_route('maquinas.index');
     }
 }
