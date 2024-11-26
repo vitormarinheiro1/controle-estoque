@@ -9,6 +9,14 @@
             <x-primary-button class="mt-4 mb-4">
                 <a href="{{ route('maquinas.create') }}">Adicionar máquina</a>
             </x-primary-button>
+            <x-primary-button class="mt-4 mb-4">
+                <a href="{{ route('maquinas.export') }}">Exportar para Excel</a>
+            </x-primary-button>
+            <x-primary-button class="mt-4 mb-4">
+                <a href="{{ route('maquinas.export.pdf') }}">Exportar para PDF</a>
+            </x-primary-button>
+
+
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <table class="w-full bg-gray-800 text-white table-auto rounded-lg shadow-lg">
